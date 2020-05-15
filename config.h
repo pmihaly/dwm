@@ -83,6 +83,7 @@ static Key keys[] = {
  	{ MODKEY|ControlMask,           XK_j,      setgaps,        {.i = +1 } },
  	{ MODKEY|ControlMask,           XK_k,      setgaps,        {.i = -1 } },
  	{ MODKEY|ControlMask|ShiftMask, XK_j,      setgaps,        {.i = 0  } },
+	{ MODKEY,                       XK_f,      togglefullscr,  {0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
@@ -93,6 +94,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY,                       XK_r,      quit,           {1} }, 
 };
 
 /* button definitions */
