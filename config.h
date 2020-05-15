@@ -80,9 +80,6 @@ static Key keys[] = {
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_F5,     xrdb,           {.v = NULL } },
- 	{ MODKEY|ControlMask,           XK_j,      setgaps,        {.i = +1 } },
- 	{ MODKEY|ControlMask,           XK_k,      setgaps,        {.i = -1 } },
- 	{ MODKEY|ControlMask|ShiftMask, XK_j,      setgaps,        {.i = 0  } },
 	{ MODKEY,                       XK_f,      togglefullscr,  {0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
