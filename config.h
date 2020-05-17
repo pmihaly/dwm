@@ -6,8 +6,8 @@ static const unsigned int gappx     = 8;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Source Code Pro:size=12" };
-static const char dmenufont[]       = "Source Code Pro:size=12";
+static const char *fonts[]          = { "Source Code Pro:size=10" };
+static const char dmenufont[]       = "Source Code Pro:size=10";
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
 static char normfgcolor[]           = "#bbbbbb";
@@ -84,7 +84,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	{ MODKEY,                       XK_r,      quit,           {1} }, 
+	{ MODKEY,                       XK_r,      quit,           {1} },
 	{ MODKEY,                       XK_space, zoom,           {0} },
 };
 
@@ -104,4 +104,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
