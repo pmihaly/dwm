@@ -84,6 +84,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+	{ MODKEY|ShiftMask,             XK_r,      quit,           {1} },
 };
 
 /* button definitions */
