@@ -11,8 +11,8 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int vertpad            = 10;       /* vertical padding of bar */
 static const int sidepad            = 10;       /* horizontal padding of bar */
-static const char *fonts[]          = { "Source Code Pro:size=10", "Symbola:size=10" };
-static const char *dmenufont[]       = { "Source Code Pro:size=10", "Symbola:size=10" };
+static const char *fonts[]          = { "Iosevka Extended:size=10", "Symbola:size=10" };
+static const char *dmenufont[]       = { "Iosevka Extended:size=10", "Symbola:size=10" };
 
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
@@ -64,7 +64,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont};
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon};
 static const char *termcmd[]  = { "st", NULL };
 
 static Key keys[] = {
